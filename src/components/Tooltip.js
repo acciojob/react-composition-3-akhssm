@@ -4,15 +4,19 @@ import "./../styles/App.css";
 const Tooltip = ({ text, children }) => {
   const [show, setShow] = useState(false);
 
+  const childWithClass = React.cloneElement(children, {
+    className: `${children.props.className || ""} tooltip`.trim()
+  });
+
   return (
     <div
-      className="tooltip"
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
+      style={{ display: "inline-block" }}
     >
-      {children}
+      {childWithClass}
 
-      {show && <span className="tooltiptext">{text}</span>}
+      {show && <div className="tooltiptext">{text}</div>}
     </div>
   );
 };
