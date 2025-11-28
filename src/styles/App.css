@@ -1,1 +1,27 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
 
+.tooltiptext {
+  background-color: rgb(255, 102, 0);   
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
