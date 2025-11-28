@@ -9,7 +9,7 @@ const Tooltip = ({ text, children }) => {
       onMouseLeave={() => setShowTooltip(false)}
     >
       {children}
-      {showTooltip && <span className="tooltiptext">{text}</span>}
+      {showTooltip && <div className="tooltiptext">{text}</div>}
     </div>
   );
 };
