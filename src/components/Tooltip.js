@@ -7,7 +7,6 @@ const Tooltip = ({ text, children }) => {
     <div
       onMouseEnter={() => setShowTooltip(true)}
       onMouseLeave={() => setShowTooltip(false)}
-      className="tooltip"
     >
       {children}
       {showTooltip && <span className="tooltiptext">{text}</span>}

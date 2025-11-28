@@ -8,13 +8,13 @@ const App = () => {
       {/* Do not remove the main div */}
 
       <Tooltip text="This is a tooltip message">
-        <h2>Hover over me</h2>
+        <h2 className="tooltip">Hover over me</h2>
       </Tooltip>
 
       <hr />
 
       <Tooltip text="This is another tooltip example">
-        <p>Hover over me to see another tooltip</p>
+        <p className="tooltip">Hover over me to see another tooltip</p>
       </Tooltip>
     </div>
   );
