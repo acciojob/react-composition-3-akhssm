@@ -1,9 +1,10 @@
 .tooltip {
   position: relative;
+  display: inline-block;
   cursor: pointer;
 }
 
-.tooltip > div {
+.tooltip-box {
   background-color: rgb(255, 89, 0);
   color: white;
   padding: 8px 12px;
@@ -21,6 +22,6 @@
   pointer-events: none;
 }
 
-.tooltip:hover > div {
+.tooltip:hover .tooltip-box {
   opacity: 1;
 }
