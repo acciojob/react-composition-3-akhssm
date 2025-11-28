@@ -3,8 +3,8 @@
   cursor: pointer;
 }
 
-.tooltiptext {
-  background-color: rgb(255, 102, 0);
+.tooltip > div {
+  background-color: rgb(255, 89, 0);
   color: white;
   padding: 8px 12px;
   border-radius: 6px;
@@ -17,10 +17,10 @@
   white-space: nowrap;
 
   opacity: 0;
-  pointer-events: none;
   transition: opacity 0.25s ease-in-out;
+  pointer-events: none;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover > div {
   opacity: 1;
 }
